@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>1</string>
+        <key>categroyName</key>
+        <string>首页</string>
+        
+    </dict>
+
+	<dict>
+		<key>keyNum</key>
+        <string>2</string>
+        <key>categroyName</key>
+        <string>开始游戏</string>
+
+	</dict>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>3</string>
+        <key>categroyName</key>
+        <string>电影日报</string>
+    </dict>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>4</string>
+        <key>categroyName</key>
+        <string>设计日报</string>
+    </dict>
+    
+    
+    <dict>
+        <key>keyNum</key>
+        <string>5</string>
+        <key>categroyName</key>
+        <string>大公司日报</string>
+    </dict>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>6</string>
+        <key>categroyName</key>
+        <string>财经日报</string>
+    </dict>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>7</string>
+        <key>categroyName</key>
+        <string>音乐日报</string>
+    </dict>
+    
+    <dict>
+        <key>keyNum</key>
+        <string>8</string>
+        <key>categroyName</key>
+        <string>体育日报</string>
+    </dict>
+    
+    <dict>
+        
+        <key>keyNum</key>
+        <string>9</string>
+        <key>categroyName</key>
+        <string>动漫日报</string>
+    </dict>
+
+    <dict>
+        
+        <key>keyNum</key>
+        <string>10</string>
+        <key>categroyName</key>
+        <string>互联网安全</string>
+	</dict>
+    
+    <dict>
+        
+        <key>keyNum</key>
+        <string>11</string>
+        <key>categroyName</key>
+        <string>不许无聊</string>
+    </dict>
+
+    <dict>
+        <key>keyNum</key>
+        <string>12</string>
+        <key>categroyName</key>
+        <string>用户推荐日报</string>
+    </dict>
+
+    <dict>
+        <key>keyNum</key>
+        <string>13</string>
+        <key>categroyName</key>
+        <string>日常心理学</string>
+    </dict>
+    
+</array>
+</plist>

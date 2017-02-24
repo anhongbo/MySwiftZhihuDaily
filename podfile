@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MySwift' do
+    	pod 'Alamofire', '~> 4.0'
+    	pod ‘SnapKit’
+	pod 'SwiftyJSON'
+  	pod 'MJExtension'
+  	pod ‘MJRefresh’
+	pod 'SDWebImage', '~>3.8'
+end
