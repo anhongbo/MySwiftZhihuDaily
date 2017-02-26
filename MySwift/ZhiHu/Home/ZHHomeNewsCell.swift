@@ -46,6 +46,11 @@ class ZHHomeNewsCell: UITableViewCell {
         let contentV = BaseView()
         contentV.addSubview(self.newTile)
         contentV.addSubview(self.newImage)
+        
+        let bottomLine = UIView()
+        bottomLine.backgroundColor = UIColor.lightGray
+        self.contentView.addSubview(bottomLine)
+        
         self.contentView.addSubview(contentV)
         
         contentV.snp.makeConstraints { (make) in
@@ -65,6 +70,12 @@ class ZHHomeNewsCell: UITableViewCell {
             make.right.equalTo(self.newImage.snp.left).offset(-10)
         }
 
+        bottomLine.snp.makeConstraints { (make) in
+            make.width.equalToSuperview()
+            make.height.equalTo(0.5)
+            make.bottom.equalToSuperview().offset(0.5)
+            make.left.equalToSuperview()
+        }
         
     }
     

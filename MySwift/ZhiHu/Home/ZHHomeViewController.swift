@@ -126,6 +126,11 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         //初始化时指定frame 里面的子控件才能使用父控件的frame设定子frame
         self.autoLoopHeaderView = ZHAutoLoopView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: 220))
         self.autoLoopHeaderView?.autoLoopArr = homeNewsVM.dataOfBanners()
+        self.autoLoopHeaderView?.autoLoopBannerClick = {(newModel) -> Void in
+            print(newModel)
+            let detailVC:ZHNewDetailController = ZHNewDetailController()
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
         self.tableView.tableHeaderView = self.autoLoopHeaderView
     }
     
@@ -205,6 +210,7 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         mainTableView.delegate = self
         mainTableView.dataSource = self
         mainTableView.tableFooterView = UIView()
+        mainTableView.separatorStyle = .none
         return mainTableView
 
     }()
@@ -223,7 +229,7 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
             
             //控制上拉轮播图 title的透明度，下拉轮播图放大
             if (self.tableView.tableHeaderView is ZHAutoLoopView) {
-                self.autoLoopHeaderView?.headerScrollWithOffset(offsetY: offsetY)
+                self.autoLoopHeaderView!.headerScrollWithOffset(offsetY: offsetY)
             }
             
             
@@ -246,7 +252,6 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
                 self.navBarTitleLbl?.text = "今日热闻"
             }
 
-            
             //下拉刷新
             if (offsetY <= -40 && offsetY >= -80 && !scrollView.isDragging && !isLoading) {
                 self.headerFresh()

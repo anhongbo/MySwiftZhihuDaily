@@ -167,7 +167,7 @@
 		A17AE9161E60268A00E98FDC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A17AE9551E6026A900E98FDC /* AutoLoop */,
+				A17AE9551E6026A900E98FDC /* AutoLoopView */,
 				A17AE9191E60268A00E98FDC /* ZHEditorsModel.swift */,
 				A17AE91A1E60268A00E98FDC /* ZHHomeNewsCell.swift */,
 				A17AE91B1E60268A00E98FDC /* ZHHomeNewsHeaderView.swift */,
@@ -190,13 +190,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		A17AE9551E6026A900E98FDC /* AutoLoop */ = {
+		A17AE9551E6026A900E98FDC /* AutoLoopView */ = {
 			isa = PBXGroup;
 			children = (
 				A17AE9171E60268A00E98FDC /* ZHAutoLoopBannerView.swift */,
 				A17AE9181E60268A00E98FDC /* ZHAutoLoopView.swift */,
 			);
-			name = AutoLoop;
+			name = AutoLoopView;
 			sourceTree = "<group>";
 		};
 		A17AE9561E6026F200E98FDC /* LeftDrawer */ = {
@@ -615,7 +615,7 @@
 				A1BB14F81E533F7E0096D06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A1BB14F91E533F7E0096D06F /* Build configuration list for PBXNativeTarget "MySwiftZhihu" */ = {
 			isa = XCConfigurationList;
@@ -624,7 +624,7 @@
 				A1BB14FB1E533F7E0096D06F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

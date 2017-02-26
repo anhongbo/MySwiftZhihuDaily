@@ -14,10 +14,11 @@ class ZHAutoLoopBannerView: UIImageView {
     //下拉scroll时，调整titleLbl距离底部的距离
     var offsetY:CGFloat = 0
     
-    
-    
     //上下滚动时 透明度指数
     var titleAlpha:CGFloat = 1
+    
+    //图片点击闭包
+    var bannerClick:((_ banerModel:ZHHomeSingleModel) -> Void)?
     
     //轮播图 数据模型
     var bannerModel = ZHHomeSingleModel(){
@@ -27,8 +28,6 @@ class ZHAutoLoopBannerView: UIImageView {
             self.sd_setImage(with: URL.init(string: bannerModel.imageUrl!), placeholderImage: nil)
             self.newsTitleConfig()
         }
-    
-    
     }
     
     //标题
@@ -46,6 +45,11 @@ class ZHAutoLoopBannerView: UIImageView {
         
         self.titleLbl = UILabel()
         self.titleLbl?.numberOfLines = 0
+        
+        let gestTap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+
+        self.addGestureRecognizer(gestTap)
+        
         self.addSubview(self.titleLbl!)
     }
     
@@ -60,10 +64,19 @@ class ZHAutoLoopBannerView: UIImageView {
         self.titleLbl?.attributedText = attr
         self.titleLbl?.frame = CGRect(x: 15, y:0, width: ScreenWidth - 30, height: titleSize.height)
         
-        //默认距离底部25
+        //距离底部25
         self.titleLbl?.setbottom(bottom: 220 - 25 - offsetY)
         self.titleLbl?.alpha = self.titleAlpha
 
+    }
+    
+    
+    func tapAction(){
+    
+        if (bannerClick != nil) {
+            bannerClick!(self.bannerModel)
+        }
+    
     }
     
     required init?(coder aDecoder: NSCoder) {

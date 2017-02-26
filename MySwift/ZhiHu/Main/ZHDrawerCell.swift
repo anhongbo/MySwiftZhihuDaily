@@ -46,7 +46,7 @@ class ZHDrawerCell: UITableViewCell {
     lazy var lblfenlei:UILabel={
         let lblCate = UILabel()
         lblCate.frame = CGRect(x: 10, y: 0, width: 150, height: 44)
-        lblCate.textColor = UIColor.white
+        lblCate.textColor = UIColor.lightGray
         lblCate.font = UIFont.systemFont(ofSize: 15.0)
         return lblCate
     }()
@@ -67,9 +67,11 @@ class ZHDrawerCell: UITableViewCell {
         
         if selected {
             self.backgroundColor = UIColor.colorWithCustom(20, g: 20, b: 20)
+            self.lblfenlei.textColor = UIColor.white
 
         }else{
             self.backgroundColor = UIColor.colorWithCustom(35, g: 42, b: 48)
+            self.lblfenlei.textColor = UIColor.lightGray
         }
         
     }
