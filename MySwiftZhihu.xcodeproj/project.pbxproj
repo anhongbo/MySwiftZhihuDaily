@@ -41,6 +41,9 @@
 		A17AE9651E6027C700E98FDC /* ZHOtherEditorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE95E1E6027C700E98FDC /* ZHOtherEditorsView.swift */; };
 		A17AE9661E6027C700E98FDC /* ZHOtherNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE95F1E6027C700E98FDC /* ZHOtherNewsModel.swift */; };
 		A17AE9671E6027C700E98FDC /* ZHOtherSingleNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE9601E6027C700E98FDC /* ZHOtherSingleNewModel.swift */; };
+		A17AE9691E62D36300E98FDC /* ZHDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE9681E62D36200E98FDC /* ZHDetailBottomView.swift */; };
+		A17AE96B1E62EA3E00E98FDC /* ZHDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE96A1E62EA3E00E98FDC /* ZHDetailHeaderView.swift */; };
+		A17AE96D1E644D9000E98FDC /* ZHNewsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AE96C1E644D9000E98FDC /* ZHNewsWebView.swift */; };
 		A196F4F31E5D3F600046013F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A196F4F21E5D3F600046013F /* UIImage+ImageEffects.m */; };
 		A1986D8F1E559B3F00242FD0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1986D8E1E559B3F00242FD0 /* Color+Extension.swift */; };
 		A1986D9B1E55C2A800242FD0 /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1986D961E55C2A800242FD0 /* UIDevice + Extension.swift */; };
@@ -91,6 +94,9 @@
 		A17AE95E1E6027C700E98FDC /* ZHOtherEditorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHOtherEditorsView.swift; sourceTree = "<group>"; };
 		A17AE95F1E6027C700E98FDC /* ZHOtherNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHOtherNewsModel.swift; sourceTree = "<group>"; };
 		A17AE9601E6027C700E98FDC /* ZHOtherSingleNewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHOtherSingleNewModel.swift; sourceTree = "<group>"; };
+		A17AE9681E62D36200E98FDC /* ZHDetailBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHDetailBottomView.swift; sourceTree = "<group>"; };
+		A17AE96A1E62EA3E00E98FDC /* ZHDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHDetailHeaderView.swift; sourceTree = "<group>"; };
+		A17AE96C1E644D9000E98FDC /* ZHNewsWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHNewsWebView.swift; sourceTree = "<group>"; };
 		A196F4F11E5D3F600046013F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		A196F4F21E5D3F600046013F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		A1986D8E1E559B3F00242FD0 /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				A17AE9141E60268A00E98FDC /* ZHNewDetailController.swift */,
+				A17AE9681E62D36200E98FDC /* ZHDetailBottomView.swift */,
+				A17AE96A1E62EA3E00E98FDC /* ZHDetailHeaderView.swift */,
+				A17AE96C1E644D9000E98FDC /* ZHNewsWebView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -432,11 +441,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17AE9691E62D36300E98FDC /* ZHDetailBottomView.swift in Sources */,
 				A17AE9581E60274700E98FDC /* ZHLastNewsModel.swift in Sources */,
 				A17AE9611E6027C700E98FDC /* ZHOtherCategoryNewsCell.swift in Sources */,
 				A17AE9671E6027C700E98FDC /* ZHOtherSingleNewModel.swift in Sources */,
 				A17AE93F1E60268A00E98FDC /* ZHHomeSingleModel.swift in Sources */,
 				A1FE5E741E584837006BA2B8 /* ANHttpReuqest.swift in Sources */,
+				A17AE96B1E62EA3E00E98FDC /* ZHDetailHeaderView.swift in Sources */,
 				A17AE9441E60268B00E98FDC /* ZHLeftBottomView.swift in Sources */,
 				A17AE94B1E60268B00E98FDC /* ZHLunchViewController.swift in Sources */,
 				A17AE93D1E60268A00E98FDC /* ZHHomeNewsHeaderView.swift in Sources */,
@@ -456,6 +467,7 @@
 				A17AE9491E60268B00E98FDC /* ZHLeftTopView.swift in Sources */,
 				A17AE9641E6027C700E98FDC /* ZHOtherCategroyNavitionBar.swift in Sources */,
 				A17AE9371E60268A00E98FDC /* ZHNewDetailController.swift in Sources */,
+				A17AE96D1E644D9000E98FDC /* ZHNewsWebView.swift in Sources */,
 				A17AE9411E60268B00E98FDC /* ZHSingleModelLayout.swift in Sources */,
 				A17AE9381E60268A00E98FDC /* GeneralConst.swift in Sources */,
 				A17AE9661E6027C700E98FDC /* ZHOtherNewsModel.swift in Sources */,

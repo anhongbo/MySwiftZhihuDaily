@@ -101,9 +101,11 @@ class ZHHomeNewsVM: NSObject {
     }
 
     //点击新闻cell跳转详情页
-    func didSelectPush( fromVC : UIViewController , newid : String){
+    func didSelectPush( fromVC : UIViewController , indexPath : IndexPath){
     
         let destVC = ZHNewDetailController()
+        let detailModel = lastNewsModel?.storiesArray?[indexPath.row]
+        destVC.detailModel = detailModel
          fromVC.navigationController?.pushViewController(destVC, animated: true)
     
     }

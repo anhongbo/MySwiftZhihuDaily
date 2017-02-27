@@ -44,6 +44,7 @@ class ZHHomeNewsCell: UITableViewCell {
         
         self.selectionStyle = .none
         let contentV = BaseView()
+        
         contentV.addSubview(self.newTile)
         contentV.addSubview(self.newImage)
         
@@ -54,7 +55,7 @@ class ZHHomeNewsCell: UITableViewCell {
         self.contentView.addSubview(contentV)
         
         contentV.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsetsMake(0, 0, 0, 0))
+            make.edges.equalTo(UIEdgeInsetsMake(5, 5, 5, 5))
         }
         
         self.newImage.snp.makeConstraints { (make) in

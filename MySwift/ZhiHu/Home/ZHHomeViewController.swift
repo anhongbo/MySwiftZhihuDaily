@@ -49,10 +49,9 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
             weakSelf?.addAotuView()
             weakSelf?.tableView.reloadData()
         }
-
     }
     
-    
+
     private func configUI(){
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -127,8 +126,8 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         self.autoLoopHeaderView = ZHAutoLoopView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: 220))
         self.autoLoopHeaderView?.autoLoopArr = homeNewsVM.dataOfBanners()
         self.autoLoopHeaderView?.autoLoopBannerClick = {(newModel) -> Void in
-            print(newModel)
             let detailVC:ZHNewDetailController = ZHNewDetailController()
+            detailVC.detailModel = newModel
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
         self.tableView.tableHeaderView = self.autoLoopHeaderView
@@ -198,8 +197,7 @@ class ZHHomeViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let newsVM = ZHHomeNewsVM()
-        newsVM.didSelectPush( fromVC: self, newid: "22")
+//        homeNewsVM.didSelectPush(fromVC: self, indexPath: indexPath)
     }
     
     //MARK:lazy tableView
