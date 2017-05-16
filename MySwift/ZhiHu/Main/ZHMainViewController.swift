@@ -26,7 +26,6 @@ class ZHMainViewController: UIViewController {
         super.viewDidLoad()
         self.setUpGesture()
         self.setUpUI()
-                
     }
 
     //MARK: 添加手势
@@ -37,7 +36,6 @@ class ZHMainViewController: UIViewController {
         
         tapGesture = UITapGestureRecognizer()
         tapGesture.addTarget(self, action: #selector(handleTapGesture))
-        
         self.view.addGestureRecognizer(panGesture)
     
     }
@@ -63,13 +61,13 @@ class ZHMainViewController: UIViewController {
         //首页控制器
         let homeVC = ZHHomeViewController()
         homeVC.showFlag = true
-        let homeNav = UINavigationController(rootViewController: homeVC)
+        let homeNav = ZHNavViewController(rootViewController: homeVC)
         self.containerController?.addChildViewController(homeNav)
         self.containerController?.view.addSubview(homeNav.view)
         
         //其他分类控制器
         let otherCateVC = OtherCategoryViewController()
-        let otherCateNav = UINavigationController(rootViewController: otherCateVC)
+        let otherCateNav = ZHNavViewController(rootViewController: otherCateVC)
         self.containerController?.addChildViewController(otherCateNav)
         self.containerController?.view.insertSubview(otherCateNav.view, belowSubview: homeNav.view)
         
